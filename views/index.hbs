@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<p>{{title}}</p>
+
+<!-- Ben, now you write a handlebar helper corresponding to the boolean you create in index.hbs
+Ben, with the helpers we create a block. We understand this block begins by seeing the hash and we understand the block ends by seeing the '/' much like when closing an html tag. -->
+{{# if condition }}
+  condition is met:
+{{ else }}
+  condition is not met:
+{{/if }}
+
+<!-- Ben, below we are going to use the Each helper keyword corresponding to the array titled anyArray in index.js -->
+{{# each anyArray as |val key|}}
+  <!-- this is a reserved word in handlebars in this Each statement Block to output the current value of the iteration. -->
+  {{key}}: {{ val }}
+{{/each}}
